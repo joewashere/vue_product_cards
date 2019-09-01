@@ -14,6 +14,7 @@
     -webkit-box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.04);
     -moz-box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.04);
     box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.04);
+    margin: 20px 10px;
 }
 
 .product_header{
@@ -131,7 +132,7 @@
     height: 50px;
     border-radius: 50%;
     background-color: lightgray;
-    opacity: 0.1;
+    opacity: 0.3;
     transition: .5s ease-in-out;
 }
 
@@ -182,6 +183,41 @@
 }
 
 .btn-primary:hover{
-    background-color: crimson;
+    background-color: green;
     cursor: pointer;
 }
+
+.rating{
+    color: orange;
+}
+
+.loadOverlay{
+    background-color: gray;
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+.atcbuttons{
+    position: relative;
+}
+
+.animate {
+    animation : shimmer 4s infinite;
+    background: linear-gradient(to right, #9ff56d 4%, #7ccc4e 25%, #95fa5b 36%);
+    background-size: 1000px 100%;
+ }
+
+ @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }

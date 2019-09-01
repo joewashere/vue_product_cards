@@ -18,22 +18,12 @@
                     <div class="product_elements">
                         <div class="product_header">
                             <h3>{{ product.name }}</h3>
-                            <div class="rating">
-                                <span class="icon-star-full icon glyph"></span>
-                                <span class="icon-star-full icon glyph"></span>
-                                <span class="icon-star-full icon glyph"></span>
-                                <span class="icon-star-half icon glyph"></span>
-                                <span class="icon-star-empty icon glyph"></span>
-                            </div>
+                            <prod-rating :rating="product.rating"></prod-rating>
                         </div>
                         <prod-image :image="product.image" :thumbnails="product.thumbnails"></prod-image>
                         <p>{{ product.descrip }}</p>
                     </div>
-                    <a class="btn-primary">
-                        <span class="glyph icon icon-cart"></span><span class="btn-price">${{ product.price }}</span><span class="btn-atc">Add to Cart</span>
-                    </a><a class="btn-secondary">
-                        <span class="glyph icon icon-heart"></span>Save
-                    </a>
+                    <atc-buttons :price="product.price"></atc-buttons>
                 </article>
             <!-- END Product Card -->
             
