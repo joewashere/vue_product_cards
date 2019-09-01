@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "IcoMoon";
+    src: url("fonts/IcoMoon-Free.ttf");
+}
+
+.product_list{
+    display: flex;
+}
+
+.product_card{
+    width: 300px;
+    border: 1px solid lightgrey;
+    font-family: 'Comfortaa', cursive;
+    -webkit-box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.04);
+    -moz-box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.04);
+    box-shadow: 10px 10px 16px -1px rgba(0,0,0,0.04);
+}
+
+.product_header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.product_card .btn-primary{
+    width: 60%;
+    background-color: black;
+    color: white;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+
+.product_card .btn-secondary{
+    width: 40%;
+    background-color: lightgray;
+    color: black;
+    
+}
+.product_card .btn-primary, .product_card .btn-secondary{
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.rating{
+    margin-left:15px;
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.glyph{
+    margin-right: 5px;
+}
+
+.product_image img{
+    display: block;
+    margin: 0 auto;
+}
+
+.product_elements h3, .product_elements p{
+    margin-left: 15px;
+}
+
+.product_image{
+    position: relative;
+}
+
+.product_thumbnails{
+    display: flex;
+    justify-content: center;
+}
+.product_thumbnails img{
+    width: 50px;
+}
+
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyph .icon {
+    font-size: 32px;
+}
+.icon-cart:before {
+    content: "\e93a";
+}
+.icon-heart:before {
+    content: "\e9da";
+}
+.icon-star-empty:before {
+    content: "\e9d7";
+}
+.icon-star-half:before {
+    content: "\e9d8";
+}
+.icon-star-full:before {
+    content: "\e9d9";
+}
+
+.arrow-container{
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    opacity: 0.1;
+    transition: .5s ease-in-out;
+}
+
+.arrow-container:hover{
+    opacity: 1.0;
+    transition: .5s ease-in-out;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  top: 40%;
+  position: absolute;
+}
+
+.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 45%;
+}
+
+.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 45%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.btn-atc{
+    display: none;
+}
+
+.btn-primary:hover .btn-price{
+    display: none;
+}
+
+.btn-primary:hover .btn-atc{
+    display: inline;
+    transition: 2s ease-in;
+}
+
+.btn-primary:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
